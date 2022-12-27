@@ -1,0 +1,21 @@
+let music = [
+    {
+        title:"Arhbo",
+        artist: "GIMS, Ozuna, Fifa World Cup Sound",
+        url:""
+    },
+    {
+        title: "Blinding Lights",
+        artist: "The Weekend", 
+        url:""
+    },
+    {
+        title: "Alone",
+        artist: "Burna Boy",
+        url:""
+    },
+    {
+        title:""
+    }
+
+]

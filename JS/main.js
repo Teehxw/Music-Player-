@@ -54,13 +54,15 @@ function checkUser(user,pass){
   for(let i=0; i < member.length; i++){
     if(user === member[i].membUser){
       alert("Username already in use")
-      return i
+      window.open("file: music.html", "Music Player");
+    //   return i
+     
     }
   }
   member.push(newMember(user, pass));
   alert("Sign Up Successful")
-  window.location.href = "music.html";
-  return -1
+  
+
  
   
   
