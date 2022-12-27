@@ -66,3 +66,17 @@ a:hover {
 #sign-in-div {
   display: none;
 }
+
+button {
+  width:100px;
+  border-radius: 15px;
+  
+}
+
+#musicFind {
+  width: 300px;
+}
+
+#musicBody {
+  text-align: center;
+}

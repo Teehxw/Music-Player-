@@ -7,14 +7,23 @@
 
     <title>Music Player</title>
 
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="img/music.png" />
     <link rel="stylesheet" href="style.css" />
+    <script defer src="js/musics.js"></script>
 
-    <script defer src="js/gui.js"></script>
-    <script defer src="js/main.js"></script>
   </head>
 
-  <body>
-<h1> HEYYY IT WORKEDD</h1>
+  <body id="musicBody">
+
+  <h1> Music Player / Library</h1>
+  <p>Simply search the name or artist of songs!</p>
+  <p>
+    <input id= "musicFind" type = "text">
+    <button id= "SearchBtn">Search</button>
+  </p>
+  <hr>
+  <div id="container"></div>
+
+
   </body>
 </html>

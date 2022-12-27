@@ -28,6 +28,7 @@ function signInHandler() {
   for (let i=0; i< member.length; i++){
     if(memberUserLog === member[i].membUser && memberPassLog === member[i].membPass){
       alert("Login Successful");
+      window.location.href = "music.html" 
       return -1;
     }
   } alert("Invalid Username or Password")
@@ -53,14 +54,14 @@ function newMember(memberUser, memberPass ) {
 function checkUser(user,pass){
   for(let i=0; i < member.length; i++){
     if(user === member[i].membUser){
-      alert("Username already in use")
-      window.open("file: music.html", "Music Player");
-    //   return i
+      alert("Username already in use");
+      return i
      
     }
   }
   member.push(newMember(user, pass));
   alert("Sign Up Successful")
+  return -1
   
 
  
