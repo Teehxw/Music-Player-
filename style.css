@@ -70,7 +70,7 @@ a:hover {
 button {
   width:100px;
   border-radius: 15px;
-  
+  font-size: 15px;
 }
 
 #musicFind {
@@ -79,4 +79,10 @@ button {
 
 #musicBody {
   text-align: center;
+}
+
+#addBtn {
+  margin-right: -750px;
+  background-color: grey;
+  
 }
