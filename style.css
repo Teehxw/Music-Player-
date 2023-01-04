@@ -1,17 +1,20 @@
-* {
-  box-sizing: border-box;
+html{
+  background-color:black;
 }
 
 body {
-  background: lightgreen;
+  background: rgb(255,255,255, 0.8);
   font-family: Arial;
+  padding: 20px 100px;
+  margin: 50px auto;
+  border-radius: 25px;
+  width:1000px;
 }
 
 div {
-  background: #eee;
-  width: 700px;
+ 
   padding: 40px 100px;
-  margin: 20px auto;
+  margin-left: -50px;
   border-radius: 15px;
  
 
@@ -85,4 +88,27 @@ button {
   margin-right: -750px;
   background-color: grey;
   
+}
+
+#output div{
+  border: 1px solid grey;
+  padding: 10px;
+  width: 300px;
+  
+}
+
+#gobackBtn {
+  margin-right: -750px;
+  background-color: grey;
+  
+}
+
+input{
+  width: 300px;
+}
+
+#addSong{
+  width:350px;
+  height:40px;
+  font-size: 20px;
 }

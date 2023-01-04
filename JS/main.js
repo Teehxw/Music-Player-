@@ -3,7 +3,7 @@
 // HTML VARIABLES
 let signInBtn = document.getElementById('sign-in-btn');
 let signUpBtn = document.getElementById('sign-up-btn')
-let confirmInput = document.getElementById('confpass');
+
 
 //Array
 let member = loadMember();
@@ -14,7 +14,10 @@ signUpBtn.addEventListener('click', signUpHandler);
 function signUpHandler() {
   let membUser = document.getElementById('user').value;
   let membPass = document.getElementById('pass').value;
+  let confirmInput = document.getElementById('confpass').value;
+  checkPass(confirmInput,membPass);
   checkUser(membUser, membPass);
+
   saveMember();
   
 }
@@ -62,10 +65,10 @@ function checkUser(user,pass){
   member.push(newMember(user, pass));
   alert("Sign Up Successful")
   return -1
-  
+}
 
- 
-  
-  
-
+function checkPass(confirm,pass){
+  if(confirm !== pass ){
+    alert("Passwords do not match")
+  }
 }
