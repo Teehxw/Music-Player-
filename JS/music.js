@@ -6,12 +6,15 @@ let searchBtn = document.getElementById("SearchBtn");
 let outputEl = document.getElementById("output");
 let addBtn = document.getElementById("addBtn");
 let displayBtn = document.getElementById("displayBtn");
+let removeBtn = document.getElementById("removeBtm");
+  
 
 
 //Event Listener
 searchBtn.addEventListener("click", searchMusic);
 addBtn.addEventListener("click", addMusic);
-displayBtn.addEventListener("click", display)
+displayBtn.addEventListener("click", display);
+removeBtn.addEventListener("click", removeMusic);
 
 //Array
 let musicArray;
@@ -61,6 +64,14 @@ function goBackLibrary(){
     window.location.href = "music.html";
 }
 
+function removeMusic(){
+
+  for (let i = 0; i < musicArray.length; i++){
+    musicArray.splice(i,1)
+    displayAll();
+  }
+}
+
 
 //Helper functions
 function displayAll() {
@@ -72,11 +83,11 @@ function displayAll() {
 }
 
 
-function getHTMLString(musicInfo,i){
+function getHTMLString(musicInfo,index){
 return `
 <div>
- <h2>${i+1}. ${musicInfo.title} </h2>
- <p> By ${musicInfo.artist} </p>
+ <h2>${index+1}. ${musicInfo.title} <button id= "removeBtn">Remove</button> </h2>
+ <p> By ${musicInfo.artist}  </p>
  </div>
 <br>
 `
